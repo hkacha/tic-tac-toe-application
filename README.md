@@ -1,4 +1,4 @@
-# zaya-lesson-app
+# Tic Tac Toe Application
 
 ## Setup
 
