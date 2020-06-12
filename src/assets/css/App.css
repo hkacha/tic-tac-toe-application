@@ -1,0 +1,111 @@
+body {
+  background-color: #F7F7F7;
+}
+
+.playmode-content h1,
+.playside-content h1 {
+  font-size: 120px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.playside-content h1.marks {
+  opacity: .3;
+}
+
+.mark-x {
+  background: rgb(54,124,241);
+  background: linear-gradient(13deg, rgba(54,124,241,1) 0%, rgba(108,206,221,1) 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mark-o {
+  background: rgb(243,119,54);
+  background: linear-gradient(13deg, rgba(243,119,54,1) 0%, rgba(241,206,106,1) 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.playmode-content h6,
+.playside-content h6,
+.section-header h6 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #4a7fad;
+}
+
+.score-board {
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #eae9e9;
+}
+
+
+.playmode-content .btn,
+.playside-content .btn {
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.playmode-content .btn.btn-info {
+  padding: .375rem 40px;
+  background-color: #2D71F5;
+  box-shadow: 0px 4px 10px #99a7ad;
+}
+
+.playmode-content .btn.btn-light,
+.playside-content .btn.btn-light {
+  margin-top: 15px;
+  padding: .375rem 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 10px #ddd;
+}
+
+.box-area {
+  background-color: #fff;
+}
+
+.col:not(:last-child) {
+  padding: 0px;
+  height: 100px;
+  cursor: pointer;
+  background: white;
+  border-right: 2px solid #f7f7f7;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.col {
+  padding: 0px;
+  height: 100px;
+  cursor: pointer;
+  background: white;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.marking {
+  width: 100%;
+  height: 100%;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Fredoka One', cursive;
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+#ai {
+  background: #d4edda;
+}
+
+.board {
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #eaeaea;
+}

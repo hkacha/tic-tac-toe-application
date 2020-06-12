@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PlayMode from './components/PlayMode.js';
+import PickSide from './components/PickSide.js';
+import PlayArea from './components/PlayArea.js';
+
+import "bootstrap/dist/css/bootstrap.css";
+import './assets/css/App.css';
+
+export default class App extends React.Component {
+
+	render(){
+		return(
+			<Router>
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-4 offset-lg-4">
+							<Switch>
+								<Route exact path="/" component={PlayMode} />
+								<Route exact path="/pick-side/:type" component={PickSide} />
+								<Route exact path="/play-area/:type/:side" component={PlayArea} />
+							</Switch>
+						</div>
+					</div>
+				</div>
+			</Router>
+		)
+	}
 }
-
-export default App;
